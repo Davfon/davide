@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Vignette/>
       <Logo text="Davide Fontanella"/>
-      <NavBar items={["Code", "Gallery", ""]}/>
+      <NavBar items={["Code", "Gallery", "About"]}/>
 
       <div className="app-body">
         <img src={Portrait} alt=""/>
