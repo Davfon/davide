@@ -8,11 +8,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  z-index: 1;
 }
 
 .logo {
-  margin-top: 0.5em;
+  margin-top: 0.8em;
   margin-left: 0.7em;
   color: $accent;
   font-family: $themeFont;
@@ -20,5 +19,6 @@
   font-weight: 800;
   font-style: normal;
   text-align: center;
+  z-index: 1;
   @include clickable;
 }

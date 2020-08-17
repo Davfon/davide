@@ -6,11 +6,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
 .app-body {
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: $bgDark;
   min-height: 100vh;
   display: flex;
@@ -18,17 +20,28 @@
   align-items: center;
   justify-content: center;
   font-family: $themeFont;
-  font-size: calc(10px + 2vmin);
+  font-size: $fontSizeCaption;
   color: $accent;
 }
 
-.vignette {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 200px rgba(32, 0, 51, 0.9) inset;
+.content-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  align-items: flex-start;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.image-container {
+  width: 500px;
+  height: 500px;
+  padding: 10px;
 }
 
 ul {
@@ -48,9 +61,17 @@ p {
 }
 
 img {
-  border-radius: 3%;
-  width: 300px;
-  height: auto;
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
+}
+
+.profile-picture {
+  background: url("../assets/davide.jpg") 50% 50% no-repeat;
+  border: 5px solid $accent;
+  border-radius: 50%;
+  width: 400px;
+  margin-bottom: 1.5em;
 }
 
 button {

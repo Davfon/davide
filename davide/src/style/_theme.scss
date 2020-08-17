@@ -10,6 +10,8 @@
   $bgMedium: #023E8A;
   $bgLight: #0077B6;
   $bgLighter: #00B4D8;
+  $vignette: #2d0544;
+  $vignetteSecondary: #1D0733;
   
   $textColor: var(--text-color);
   
@@ -22,6 +24,7 @@
   $fontSizeHeader: 2.66rem; // 48px
   $fontSizeSmallHeader: 1.38rem; // 25px
   $fontSizeCaption: 1.66rem; // 30px
+  $fontSizeNavBarItem: 1.7rem; // 31px
   $fontSizeChat: 0.77rem; // 14px
   $fontSizeButton: 1.11rem; // 20px
   
@@ -54,26 +57,23 @@
     user-select: none;
     outline: none;
     &:hover {
-      filter: brightness(110%);
+      filter: brightness(120%);
     }
     &:active {
       transform: scale(0.95);
     }
   }
   
-  @mixin scrollbar {
-    &::-webkit-scrollbar {
-      width: 0.36rem;
-      height: 0.36rem;
-    }
-    &::-webkit-scrollbar-track {
-      border-radius: 0.18rem;
-      -webkit-box-shadow: inset 0 0 0.36rem rgba(0, 0, 0, .3);
-    }
-    &::-webkit-scrollbar-thumb {
-      border-radius: 0.18rem;
-      background-color: $bgLight;
-    }
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: $vignetteSecondary;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0.25rem;
+    background-color: $accent;
   }
   
   .disabled {

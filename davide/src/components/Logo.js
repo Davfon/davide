@@ -5,7 +5,7 @@ class Logo extends React.Component {
     render() {
         return(
             <div className="logo-container">
-                <div className="logo">
+                <div className="logo" onClick={() => window.location.pathname = "/"}>
                     {this.props.text}
                 </div>
             </div>

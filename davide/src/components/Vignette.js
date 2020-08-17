@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/App.scss'
+import '../style/Vignette.scss'
 
 class Vignette extends React.Component {
     render() {

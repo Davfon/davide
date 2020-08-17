@@ -1,7 +1,9 @@
 @import "theme";
 
 .navbar {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: $bgDark;
   display: flex;
   align-items: center;
@@ -10,16 +12,23 @@
 }
 
 .navbar-item {
-  margin-top: 1.4em;
+  width: 5em;
+  height: 2.2em;
+  border-radius: 5px;
+  margin-top: 1.15em;
   color: $accent;
   font-family: $themeFont;
-  font-size: $fontSizeDefault * 1.5;
+  font-size: $fontSizeNavBarItem;
   font-weight: 500;
   font-style: normal;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
   @include clickable;
 }
 
-.navbar-margin:not(:last-child){
-  margin-right: 2em;
+.active {
+  background-color: $accent;
+  color: $bgDark;
 }
