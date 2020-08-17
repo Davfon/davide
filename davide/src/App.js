@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Portrait from './assets/davide.jpg';
+import Vignette from './components/Vignette';
+import Logo from './components/Logo';
+import NavBar from './components/NavBar';
+import './style/App.scss';
+import './style/Image.scss';
+import './style/Logo.scss';
+import './style/NavBar.scss';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Vignette/>
+      <Logo text="Davide Fontanella"/>
+      <NavBar items={["Code", "Gallery", ""]}/>
+
+      <div className="app-body">
+        <img src={Portrait} alt=""/>
+        <p>I like coding, taking photos and videos.</p>
+      </div>
+
     </div>
   );
 }

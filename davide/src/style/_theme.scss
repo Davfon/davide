@@ -1,0 +1,87 @@
+@font-face {
+    src: url(../fonts/Overpass-Regular.ttf);
+    font-family: 'Overpass';
+}
+
+
+/* Theme Colors */
+  $accent: #64DFDF;
+  $bgDark: #010a17;
+  $bgMedium: #023E8A;
+  $bgLight: #0077B6;
+  $bgLighter: #00B4D8;
+  
+  $textColor: var(--text-color);
+  
+  /* Font stuff */
+  $themeFont: 'Overpass';
+  $rootFontSize: 18px; // this is rem
+  
+  $fontSizeDefault: 1rem;
+  $fontSizeInput: 0.89rem; // 16px
+  $fontSizeHeader: 2.66rem; // 48px
+  $fontSizeSmallHeader: 1.38rem; // 25px
+  $fontSizeCaption: 1.66rem; // 30px
+  $fontSizeChat: 0.77rem; // 14px
+  $fontSizeButton: 1.11rem; // 20px
+  
+  
+  /* Our standard drop-shadow */
+  $dropShadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
+  
+  /* some common css stuff */
+  @mixin fullscreen {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  @mixin fillCenter {
+    width: 100%;
+    height: 100%;
+    @include center;
+  }
+  
+  @mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin clickable {
+    cursor: pointer;
+    transition: 0.3s;
+    user-select: none;
+    outline: none;
+    &:hover {
+      filter: brightness(110%);
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  
+  @mixin scrollbar {
+    &::-webkit-scrollbar {
+      width: 0.36rem;
+      height: 0.36rem;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 0.18rem;
+      -webkit-box-shadow: inset 0 0 0.36rem rgba(0, 0, 0, .3);
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 0.18rem;
+      background-color: $bgLight;
+    }
+  }
+  
+  .disabled {
+    opacity: 0.6 !important;
+    cursor: not-allowed !important;
+  
+    &:hover {
+      filter: none !important;
+      transform: none !important;
+    }
+  }

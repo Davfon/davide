@@ -1,0 +1,25 @@
+@import 'theme';
+
+$uiBorderRadius: 0.3em;
+
+// Button
+
+$buttonHeight: 1.75em;
+
+.button-container {
+  font-size: $fontSizeButton;
+  height: $buttonHeight;
+  border: none;
+  border-radius: $uiBorderRadius;
+  padding: 0 0.5em;
+  @include clickable;
+}
+
+.button-text {
+  font-family: $themeFont;
+  line-height: $buttonHeight;
+  margin: 0;
+  position: relative;
+  color: $accent;
+  background-color: $bgMedium;
+}
