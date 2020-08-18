@@ -7,7 +7,6 @@ import Aboutview from './components/AboutView';
 
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './style/App.scss';
-import './style/Image.scss';
 import './style/Logo.scss';
 import './style/NavBar.scss';
 

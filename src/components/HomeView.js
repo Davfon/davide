@@ -1,7 +1,6 @@
 import React from 'react';
 import '../style/App.scss'
 
-import Portrait from '../assets/davide.jpg';
 import Vignette from './Vignette';
 import Logo from './Logo';
 import NavBar from './NavBar';
