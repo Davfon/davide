@@ -4,7 +4,7 @@ import '../style/App.scss'
 class NavBar extends React.Component {
     render() {
         const items = this.props.items.map((item) =>
-            <NavBarItem item={item} selection={this.props.selection}/>
+            <NavBarItem key={item} item={item} selection={this.props.selection}/>
         );
 
         return(
@@ -21,6 +21,7 @@ class NavBarItem extends React.Component {
 
         return(
             <div
+                key={this.props.item}
                 className={`navbar-item navbar-margin ${isActive && 'active'}`}
                 onClick={() => {
                     this.handleClick(this.props.item.toLowerCase())

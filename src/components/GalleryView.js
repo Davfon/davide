@@ -18,16 +18,20 @@ import insta13 from '../assets/insta13.jpg';
 import Vignette from './Vignette';
 import Logo from './Logo';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 class GalleryView extends React.Component {
     render() {
         return(
             <div className="App">
+                <div className="fill-window"/>
+                
                 <Logo text="Davide Fontanella"/>
+
                 <NavBar items={["Code", "Gallery", "About"]} selection="Gallery"/>
         
                 <div className="app-body">
-                    <div className="content-container">
+                    <div className="imagegrid">
                         <div className="image-container">
                             <img src={insta1} alt=""/>
                         </div>
@@ -69,6 +73,14 @@ class GalleryView extends React.Component {
                         </div>
                     </div>
                 </div>
+
+                <div className="content-fadeout"/>
+
+                <Footer 
+                    items={["GitHub", "Instagram", "YouTube"]} 
+                    links={["https://github.com/davfon", "http://www.instagram.com/fon.edit", "https://www.youtube.com/channel/UCYDd2K2ppnv8K_UlMrU3yqQ"]}
+                />
+
                 <Vignette/>
             </div>
         )
