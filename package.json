@@ -8,9 +8,13 @@
     "@testing-library/user-event": "^7.2.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-bottom-scroll-listener": "^4.1.0",
     "react-dom": "^16.13.1",
+    "react-inlinesvg": "^2.0.1",
+    "react-player": "^2.6.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-youtube": "^7.11.3",
     "typeface-clear-sans": "0.0.44",
     "typeface-open-sans": "0.0.75",
     "typefaces": "0.0.1"

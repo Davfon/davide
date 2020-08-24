@@ -10,11 +10,12 @@ class AboutView extends React.Component {
     render() {
         return(
             <div className="App">
-                <div className="fill-window"/>
+                <div className="background"/>
+                <Vignette/>
 
                 <Logo text="Davide Fontanella"/>
 
-                <NavBar items={["Code", "Gallery", "About"]} selection="About"/>
+                <NavBar items={["Code", "Gallery", "Videos", "About"]} selection="About"/>
         
                 <div className="app-body">
                     <div className="content-container">
@@ -28,8 +29,6 @@ class AboutView extends React.Component {
                     items={["GitHub", "Instagram", "YouTube"]} 
                     links={["https://github.com/davfon", "http://www.instagram.com/fon.edit", "https://www.youtube.com/channel/UCYDd2K2ppnv8K_UlMrU3yqQ"]}
                 />
-
-                <Vignette/>
             </div>
         )
     }

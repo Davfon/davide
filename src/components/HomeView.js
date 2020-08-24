@@ -1,5 +1,6 @@
 import React from 'react';
-import '../style/App.scss'
+import '../style/App.scss';
+import Davide from '../assets/davide.jpg';
 
 import Vignette from './Vignette';
 import Logo from './Logo';
@@ -10,19 +11,18 @@ class HomeView extends React.Component {
     render() {
         return (
             <div className="App">
-                <div className="fill-window"/>
+                <div className="background"/>
+                <Vignette/>
 
                 <Logo text="Davide Fontanella"/>
 
-                <NavBar items={["Code", "Gallery", "About"]}/>
+                <NavBar items={["Code", "Gallery", "Videos", "About"]}/>
         
                 <div className="app-body">
                     <div className="content-container">
-                        <div className="profile-picture-container">
-                            <div className="profile-picture"/>
-                            <p>I like coding, taking photos and videos.</p>
-                            <p>I like minimalism and the color teal.</p>
-                        </div>
+                        <img className="profile-picture" src={Davide} alt=""/>
+                        <p>I like coding, taking photos and videos.</p>
+                        <p>I like minimalism and the color teal.</p>
                     </div>
                 </div>
 
@@ -32,8 +32,6 @@ class HomeView extends React.Component {
                     items={["GitHub", "Instagram", "YouTube"]} 
                     links={["https://github.com/davfon", "http://www.instagram.com/fon.edit", "https://www.youtube.com/channel/UCYDd2K2ppnv8K_UlMrU3yqQ"]}
                 />
-        
-                <Vignette/>
             </div>
         );
     }

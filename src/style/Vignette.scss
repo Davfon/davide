@@ -1,11 +1,12 @@
 @import "theme";
 
 .vignette {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0 120px $vignette inset;
-    pointer-events: none;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 120px $vignette inset;
+  pointer-events: none;
+  z-index: 1;
+}

@@ -6,11 +6,11 @@
 
 /* Theme Colors */
   $accent: #64DFDF;
-  $bgDark: #010a17;
+  $bgDark: #010d1d;
   $bgMedium: #023E8A;
   $bgLight: #0077B6;
   $bgLighter: #00B4D8;
-  $vignette: #2d0544;
+  $vignette: #380953;
   $vignetteSecondary: #1D0733;
   
   $textColor: var(--text-color);
@@ -20,12 +20,9 @@
   $rootFontSize: 18px; // this is rem
   
   $fontSizeDefault: 1rem;
-  $fontSizeInput: 0.89rem; // 16px
-  $fontSizeHeader: 2.66rem; // 48px
-  $fontSizeSmallHeader: 1.38rem; // 25px
+  $fontSizeAnnotation: 0.7rem; // 14px
   $fontSizeCaption: 1.66rem; // 30px
   $fontSizeNavBarItem: 1.7rem; // 31px
-  $fontSizeChat: 0.77rem; // 14px
   $fontSizeButton: 1.11rem; // 20px
   
   
